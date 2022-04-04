@@ -13,21 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nome = "Paulo";
-    $idade = 29;
-    $arr = [10,20,30,40,50];
-    $nomes = ['Paulo', 'Luziete', 'Arthur', 'Kayo', 'Apólo', 'Thor'];
+use App\Http\Controllers\ContestController;
 
-    return view('welcome',
-        [
-            'nome' => $nome,
-            'idade2' => $idade,
-            'profissao' => 'Programador',
-            'arr' => $arr,
-            'nomes' => $nomes
-        ]);
-});
+Route::get('/', [ContestController::class, 'index']);
+Route::get('/contests/create', [ContestController::class, 'create']);
 
 Route::get('/contact', function () {
     return view('contact');
@@ -36,9 +25,9 @@ Route::get('/contact', function () {
 Route::get('/produtos', function () {
     $busca = request('search');
 
-    return view('products',['busca' => $busca]);
+    return view('products', ['busca' => $busca]);
 });
 
-Route::get('/produto/{id?}', function($id = null) {
-   return view('product', ['id' => $id]);
+Route::get('/produto/{id?}', function ($id = null) {
+    return view('product', ['id' => $id]);
 });
