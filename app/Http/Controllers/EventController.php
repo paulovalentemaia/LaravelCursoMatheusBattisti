@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ContestController extends Controller
+class EventController extends Controller
 {
     public function index()
     {
@@ -25,6 +25,6 @@ class ContestController extends Controller
 
     public function create()
     {
-        return view('contests.create');
+        return view('events.create');
     }
 }

@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\ContestController;
+use App\Http\Controllers\EventController;
 
-Route::get('/', [ContestController::class, 'index']);
-Route::get('/contests/create', [ContestController::class, 'create']);
+Route::get('/', [EventController::class, 'index']);
+Route::get('/events/create', [EventController::class, 'create']);
 
 Route::get('/contact', function () {
     return view('contact');

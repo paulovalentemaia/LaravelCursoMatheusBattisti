@@ -28,10 +28,10 @@
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Concursos</a>
+                    <a href="/" class="nav-link">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contests/create" class="nav-link">Criar Concurso</a>
+                    <a href="/events/create" class="nav-link">Criar Evento</a>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">Entrar</a>
