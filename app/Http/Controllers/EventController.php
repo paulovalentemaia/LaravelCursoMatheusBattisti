@@ -19,6 +19,13 @@ class EventController extends Controller
         return view('events.create');
     }
 
+    public function show($id)
+    {
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+    }
+
     public function store(Request $request)
     {
         $event = new Event;
@@ -32,7 +39,7 @@ class EventController extends Controller
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             $requestImage = $request->image;
             $extension = $requestImage->extension();
-            $imageName = md5($requestImage->getClientOriginalName()) . strtotime('now') . '.' . $extension;
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . '.' . $extension;
 
             $requestImage->move(public_path('img/events'), $imageName);
 
