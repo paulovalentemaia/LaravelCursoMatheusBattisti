@@ -27,6 +27,25 @@
                 </select>
             </div>
             <div class="form-group">
+                <label for="title">Adicione itens de infraestrutura:</label>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Palco"> Palco
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Cerveja Grátis"> Cerveja Grátis
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Open Food"> Open Food
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Brindes"> Brindes
+                </div>
+
+            </div>
+            <div class="form-group">
                 <label for="title">Descrição:</label>
                 <textarea name="description" id="description" placeholder="O que vai acontecer no evento?"
                           class="form-control"></textarea>
