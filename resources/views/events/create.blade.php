@@ -16,11 +16,15 @@
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento">
             </div>
             <div class="form-group">
-                <label for="title">Cidade:</label>
+                <label for="date">Data do Evento:</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="city">Cidade:</label>
                 <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento">
             </div>
             <div class="form-group">
-                <label for="title">O evento é privado?</label>
+                <label for="private">O evento é privado?</label>
                 <select name="private" id="private" class="form-control">
                     <option value="0">Não</option>
                     <option value="1">Sim</option>
@@ -46,7 +50,7 @@
 
             </div>
             <div class="form-group">
-                <label for="title">Descrição:</label>
+                <label for="description">Descrição:</label>
                 <textarea name="description" id="description" placeholder="O que vai acontecer no evento?"
                           class="form-control"></textarea>
             </div>
