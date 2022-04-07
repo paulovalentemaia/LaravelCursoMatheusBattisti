@@ -15,6 +15,9 @@ class Event extends Model
 
     protected $dates = ['date'];
 
+    //tudo que for enviado pelo post pode ser enviado
+    protected $guarded = [];
+
     //One to Many - Pertence a um
     public function user() {
         return $this->belongsTo('App\Models\User');
