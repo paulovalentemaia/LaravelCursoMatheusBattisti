@@ -22,4 +22,9 @@ class Event extends Model
     public function user() {
         return $this->belongsTo('App\Models\User');
     }
+
+    //Many to Many
+    public function users(){
+        return $this->belongsToMany('App\Models\User');
+    }
 }
