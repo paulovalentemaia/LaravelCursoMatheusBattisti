@@ -121,7 +121,7 @@ header {
     color: #CCC;
 }
 
-.card .card-title{
+.card .card-title {
     color: #212121;
     font-size: 20px;
     font-weight: bold;
@@ -144,7 +144,7 @@ header {
 
 #event-create-container input,
 #event-create-container select,
-#event-create-container textarea, {
+#event-create-container textarea {
     font-size: 12px;
 }
 
@@ -162,6 +162,7 @@ header {
     font-size: 36px;
     font-weight: 900;
 }
+
 #image-container p {
     margin: 0;
     font-size: 14px;
@@ -190,8 +191,18 @@ header {
     padding-left: 0;
 }
 
-#items-list li{
+#items-list li {
     display: flex;
+}
+
+/* Dashboard */
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 25%;
 }
 
 /* footer */
